@@ -1,4 +1,4 @@
-Abstraction:
+1)Abstraction:
 
 
 package com.abstraction; 
@@ -44,7 +44,7 @@ public class MyClass
   } 
 }
 
-Exception handling:
+2)Exception handling:
 
 
 import java.io.*;
@@ -104,7 +104,7 @@ class MethodOverloading
 }
 
 
-Inheritance:
+3)Inheritance:
 
 class A 
 { 
@@ -132,4 +132,35 @@ class singleInheritance
  obj.display(); 
  obj.show(); 
  } 
+}
+
+4) Encapsulation
+
+
+class Area {
+
+  int length;
+  int breadth;
+
+
+  Area(int length, int breadth) {
+    this.length = length;
+    this.breadth = breadth;
+  }
+
+  
+  public void getArea() {
+    int area = length * breadth;
+    System.out.println("Area: " + area);
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    // create object of Area
+    // pass value of length and breadth
+    Area rectangle = new Area(5, 6);
+    rectangle.getArea();
+  }
 }
